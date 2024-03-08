@@ -19,7 +19,14 @@ const NewsCatalogue = () => {
 	return (
 		<div>
 			{articles.map(article => {
-				return <NewsElement></NewsElement>;
+				return (
+					<NewsElement
+						title={article.title}
+						description={article.description}
+						url={article.url}
+						urlToImage={article.urlToImage}
+					/>
+				);
 			})}
 		</div>
 	);
