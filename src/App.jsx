@@ -1,9 +1,12 @@
 import './App.css';
+import NewsCatalogue from './components/NewsCatalogue';
+import NewsElement from './components/NewsElement';
 
 function App() {
 	return (
 		<div>
-			<h1>hola</h1>
+			<NewsCatalogue />
+			<NewsElement />
 		</div>
 	);
 }
